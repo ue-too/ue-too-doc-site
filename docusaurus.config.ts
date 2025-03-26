@@ -82,9 +82,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'uē-tôo',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'uē-tôo Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -94,13 +94,20 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
+        {
+          label: 'Examples',
+          position: 'left',
+          sidebarId: 'examplesSidebar',
+          to: '/docs/examples',
+        },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/ue-too/ue-too',
           label: 'GitHub',
           position: 'right',
         },
       ],
+      hideOnScroll: true,
     },
     docs: {
       sidebar: {
@@ -110,47 +117,17 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
+        // {
+        //   title: 'Docs',
+        //   items: [
+        //     {
+        //       label: 'Tutorial',
+        //       to: '/docs/intro',
+        //     },
+        //   ],
+        // },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} uē-tôo. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
